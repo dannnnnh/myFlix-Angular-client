@@ -5,7 +5,7 @@ import {Observable, throwError} from 'rxjs';
 
 
 // Declaring the api url that will provide data for the client app
-const apiUrl = 'https://myflixdb001.herokuapp.com';
+const apiUrl = 'https://myflixdb001.herokuapp.com/';
 @Injectable({providedIn: 'root'})
 
 export class FetchApiDataService {
