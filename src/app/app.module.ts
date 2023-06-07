@@ -18,6 +18,10 @@ import {WelcomePageComponent} from './welcome-page/welcome-page.component';
 import {RouterModule, Routes} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 
+/**
+ * Application routes
+ * @type {Routes}
+ */
 const appRoutes: Routes = [
     {
         path: 'welcome',
@@ -32,6 +36,10 @@ const appRoutes: Routes = [
     },
 ];
 
+/**
+ * @module AppModule
+ * Main module that bootstraps and configures the application.
+ */
 @NgModule({
     declarations: [
         AppComponent,
@@ -39,8 +47,6 @@ const appRoutes: Routes = [
         UserLoginFormComponent,
         MovieCardComponent,
         WelcomePageComponent,
-
-
     ],
     imports: [
         RouterModule.forRoot(appRoutes),
@@ -54,12 +60,9 @@ const appRoutes: Routes = [
         MatInputModule,
         MatButtonModule,
         MatSnackBarModule,
-
         MatFormFieldModule,
         MatDialogModule,
-
     ],
-
     providers: [],
     bootstrap: [AppComponent]
 })
